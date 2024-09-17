@@ -10,6 +10,7 @@ const { streets } = getStreets()
 const newStreet = ref('')
 const newNumber = ref('')
 
+
 const addStreet = (): void => {
   if (newStreet.value) {
     streets.value.push({
@@ -26,6 +27,9 @@ const addNumber = (streetIndex: number): void => {
     newNumber.value = ''
   }
 }
+
+
+
 </script>
 
 <template>
